@@ -98,6 +98,10 @@
   #define Z_ENABLE_PIN                        26
   #define E0_ENABLE_PIN                       14
 
+
+  // hacked in external fan MOSFET control
+  #define FAN_PIN                             4
+
   #if !defined(FAN_PIN) && ENABLED(LCD_I2C_PANELOLU2)
     #define FAN_PIN                            4  // Uses Transistor1 (PWM) on Panelolu2's Sanguino Adapter Board to drive the fan
   #endif

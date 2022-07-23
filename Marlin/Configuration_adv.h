@@ -169,9 +169,9 @@
 // Heated Bed Bang-Bang options
 //
 #if DISABLED(PIDTEMPBED)
-  #define BED_CHECK_INTERVAL 2500   // (ms) Interval between checks in bang-bang control
+  #define BED_CHECK_INTERVAL 500   // (ms) Interval between checks in bang-bang control
   #if ENABLED(BED_LIMIT_SWITCHING)
-    #define BED_HYSTERESIS 2        // (°C) Only set the relevant heater state when ABS(T-target) > BED_HYSTERESIS
+    #define BED_HYSTERESIS 1        // (°C) Only set the relevant heater state when ABS(T-target) > BED_HYSTERESIS
   #endif
 #endif
 

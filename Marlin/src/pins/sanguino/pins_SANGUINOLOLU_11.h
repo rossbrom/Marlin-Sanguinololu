@@ -100,8 +100,8 @@
 
 
   // hacked in external fan MOSFET control
-  // 4 is actually D12 on GPIO????
-  //#define FAN_PIN                             4 // stolen back for extruder fan. Could use a different gpio for this?
+  // 4 is  labeled as D12 on GPIO????
+  #define FAN_PIN                             4 // 
 
   #if !defined(FAN_PIN) && ENABLED(LCD_I2C_PANELOLU2)
     #define FAN_PIN                            4  // Uses Transistor1 (PWM) on Panelolu2's Sanguino Adapter Board to drive the fan
